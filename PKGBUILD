@@ -37,9 +37,8 @@ prepare() {
 		sed -i "s,^# licensePath=,licensePath=${srcdir}/matlab.lic," "${srcdir}/${pkgname}/installer_input.txt"
 	else
 		sed -i "s,^# activationPropertiesFile=,activationPropertiesFile=${srcdir}/${pkgname}/activate.ini," "${srcdir}/${pkgname}/installer_input.txt"
-		sed -i "s,^# isSilent=,isSilent=true" "${srcdir}/${pkgname}/activate.ini"
-		sed -i "s,^# activateCommand=,activateCommand=activateOffline" "${srcdir}/${pkgname}/activate.ini"
-		sed -i "s,^# licenseFile=,licenseFile=${srcdir}/matlab.lic" "${srcdir}/${pkgname}/activate.ini"
+		sed -i "s,^activateCommand=,activateCommand=activateOffline," "${srcdir}/${pkgname}/activate.ini"
+		sed -i "s,^licenseFile=,licenseFile=${srcdir}/matlab.lic," "${srcdir}/${pkgname}/activate.ini"
 	fi
 }
 
