@@ -5,7 +5,7 @@
 ## To perform a network install set $_networkinstall to true.
 
 pkgname=matlab
-pkgver=9.4.0.813654
+pkgver=9.1.0.441655
 pkgrel=1
 _instdir="/opt/${pkgname}"
 pkgdesc='A high-level language for numerical computation and visualization'
