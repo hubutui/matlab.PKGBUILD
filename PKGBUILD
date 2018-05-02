@@ -5,7 +5,7 @@
 ## To perform a network install set $_networkinstall to true.
 
 pkgname=matlab
-pkgver=9.1.0.441655
+pkgver=8.1.0.604
 pkgrel=1
 _instdir="/opt/${pkgname}"
 pkgdesc='A high-level language for numerical computation and visualization'
@@ -47,5 +47,5 @@ package() {
 	"${srcdir}/${pkgname}/install" -inputFile "${srcdir}/${pkgname}/installer_input.txt"
 
 	msg2 'Installing license'
-	install -D -m644 "${pkgdir}/${_instdir}/license_agreement.txt" "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
+	install -D -m644 "${pkgdir}/${_instdir}/license.txt" "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
 }
